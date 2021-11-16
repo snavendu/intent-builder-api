@@ -1,0 +1,6168 @@
+{
+  "settings": {
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "hi": {
+            "intent": "hello",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "hello",
+            "domain": "default"
+          },
+          "are,how,you": {
+            "intent": "hello",
+            "domain": "default"
+          },
+          "going,is,on,what": {
+            "intent": "hello",
+            "domain": "default"
+          },
+          "s,up,what": {
+            "intent": "hello",
+            "domain": "default"
+          },
+          "hey,man": {
+            "intent": "hello",
+            "domain": "default"
+          },
+          "acha,hai,sahi": {
+            "intent": "hello",
+            "domain": "default"
+          },
+          "bhai,ore": {
+            "intent": "hello",
+            "domain": "default"
+          },
+          "bye": {
+            "intent": "bye",
+            "domain": "default"
+          },
+          "see,you": {
+            "intent": "bye",
+            "domain": "default"
+          },
+          "thank,you": {
+            "intent": "bye",
+            "domain": "default"
+          },
+          "cuisine,kind,of,what": {
+            "intent": "food",
+            "domain": "default"
+          },
+          "cuisine,provide,you": {
+            "intent": "food",
+            "domain": "default"
+          },
+          "have,like,to,what,woul,you": {
+            "intent": "food",
+            "domain": "default"
+          },
+          "cuisine,provide,what,you": {
+            "intent": "food",
+            "domain": "default"
+          },
+          "don,food,i,like,t,your": {
+            "intent": "not like ",
+            "domain": "default"
+          },
+          "cuisine,don,i,like,t,the": {
+            "intent": "not like ",
+            "domain": "default"
+          },
+          "cuisne,good,not,so,was": {
+            "intent": "not like ",
+            "domain": "default"
+          },
+          "don,food,i,like,t,the": {
+            "intent": "not like ",
+            "domain": "default"
+          },
+          "burger,kind,of,what": {
+            "intent": "burger",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "hello": "default",
+          "bye": "default",
+          "food": "default",
+          "not like ": "default",
+          "burger": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are you",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is going on",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's up",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey man",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "acha sahi hai",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "ore bhai",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "thank you",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "what kind of cuisine",
+            "intent": "food"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuisine you provide",
+            "intent": "food"
+          },
+          {
+            "domain": "default",
+            "utterance": "what woul you like to have?",
+            "intent": "food"
+          },
+          {
+            "domain": "default",
+            "utterance": "what cuisine you provide?",
+            "intent": "food"
+          },
+          {
+            "domain": "default",
+            "utterance": "i don, t like your food",
+            "intent": "not like "
+          },
+          {
+            "domain": "default",
+            "utterance": "i don't like the cuisine",
+            "intent": "not like "
+          },
+          {
+            "domain": "default",
+            "utterance": "cuisne was not so good",
+            "intent": "not like "
+          },
+          {
+            "domain": "default",
+            "utterance": "i don't like the food",
+            "intent": "not like "
+          },
+          {
+            "domain": "default",
+            "utterance": "what kind of burger?",
+            "intent": "burger"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are you",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is going on",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's up",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey man",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "acha sahi hai",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "ore bhai",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "thank you",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "what kind of cuisine",
+            "intent": "food"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuisine you provide",
+            "intent": "food"
+          },
+          {
+            "domain": "default",
+            "utterance": "what woul you like to have?",
+            "intent": "food"
+          },
+          {
+            "domain": "default",
+            "utterance": "what cuisine you provide?",
+            "intent": "food"
+          },
+          {
+            "domain": "default",
+            "utterance": "i don, t like your food",
+            "intent": "not like "
+          },
+          {
+            "domain": "default",
+            "utterance": "i don't like the cuisine",
+            "intent": "not like "
+          },
+          {
+            "domain": "default",
+            "utterance": "cuisne was not so good",
+            "intent": "not like "
+          },
+          {
+            "domain": "default",
+            "utterance": "i don't like the food",
+            "intent": "not like "
+          },
+          {
+            "domain": "default",
+            "utterance": "what kind of burger?",
+            "intent": "burger"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are you",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is going on",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's up",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey man",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "acha sahi hai",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "ore bhai",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "thank you",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "what kind of cuisine",
+            "intent": "food"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuisine you provide",
+            "intent": "food"
+          },
+          {
+            "domain": "default",
+            "utterance": "what woul you like to have?",
+            "intent": "food"
+          },
+          {
+            "domain": "default",
+            "utterance": "what cuisine you provide?",
+            "intent": "food"
+          },
+          {
+            "domain": "default",
+            "utterance": "i don, t like your food",
+            "intent": "not like "
+          },
+          {
+            "domain": "default",
+            "utterance": "i don't like the cuisine",
+            "intent": "not like "
+          },
+          {
+            "domain": "default",
+            "utterance": "cuisne was not so good",
+            "intent": "not like "
+          },
+          {
+            "domain": "default",
+            "utterance": "i don't like the food",
+            "intent": "not like "
+          },
+          {
+            "domain": "default",
+            "utterance": "what kind of burger?",
+            "intent": "burger"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "hi": 1,
+              "hello": 1,
+              "how": 1,
+              "are": 1,
+              "you": 1,
+              "what": 1,
+              "is": 1,
+              "going": 1,
+              "on": 1,
+              "s": 1,
+              "up": 1,
+              "hey": 1,
+              "man": 1,
+              "acha": 1,
+              "sahi": 1,
+              "hai": 1,
+              "ore": 1,
+              "bhai": 1,
+              "bye": 1,
+              "see": 1,
+              "thank": 1,
+              "kind": 1,
+              "of": 1,
+              "cuisine": 1,
+              "provide": 1,
+              "woul": 1,
+              "like": 1,
+              "to": 1,
+              "have": 1,
+              "i": 1,
+              "don": 1,
+              "t": 1,
+              "your": 1,
+              "food": 1,
+              "the": 1,
+              "cuisne": 1,
+              "was": 1,
+              "not": 1,
+              "so": 1,
+              "good": 1,
+              "burger": 1
+            },
+            "intents": {
+              "hello": 1,
+              "bye": 1,
+              "food": 1,
+              "not like ": 1,
+              "burger": 1
+            },
+            "intentFeatures": {
+              "hello": {
+                "hi": 1,
+                "hello": 1,
+                "how": 1,
+                "are": 1,
+                "you": 1,
+                "what": 1,
+                "is": 1,
+                "going": 1,
+                "on": 1,
+                "s": 1,
+                "up": 1,
+                "hey": 1,
+                "man": 1,
+                "acha": 1,
+                "sahi": 1,
+                "hai": 1,
+                "ore": 1,
+                "bhai": 1
+              },
+              "bye": {
+                "bye": 1,
+                "see": 1,
+                "you": 1,
+                "thank": 1
+              },
+              "food": {
+                "what": 1,
+                "kind": 1,
+                "of": 1,
+                "cuisine": 1,
+                "you": 1,
+                "provide": 1,
+                "woul": 1,
+                "like": 1,
+                "to": 1,
+                "have": 1
+              },
+              "not like ": {
+                "i": 1,
+                "don": 1,
+                "t": 1,
+                "like": 1,
+                "your": 1,
+                "food": 1,
+                "the": 1,
+                "cuisine": 1,
+                "cuisne": 1,
+                "was": 1,
+                "not": 1,
+                "so": 1,
+                "good": 1
+              },
+              "burger": {
+                "what": 1,
+                "kind": 1,
+                "of": 1,
+                "burger": 1
+              }
+            },
+            "featuresToIntent": {
+              "hi": [
+                "hello"
+              ],
+              "hello": [
+                "hello"
+              ],
+              "how": [
+                "hello"
+              ],
+              "are": [
+                "hello"
+              ],
+              "you": [
+                "hello",
+                "bye",
+                "food"
+              ],
+              "what": [
+                "hello",
+                "food",
+                "burger"
+              ],
+              "is": [
+                "hello"
+              ],
+              "going": [
+                "hello"
+              ],
+              "on": [
+                "hello"
+              ],
+              "s": [
+                "hello"
+              ],
+              "up": [
+                "hello"
+              ],
+              "hey": [
+                "hello"
+              ],
+              "man": [
+                "hello"
+              ],
+              "acha": [
+                "hello"
+              ],
+              "sahi": [
+                "hello"
+              ],
+              "hai": [
+                "hello"
+              ],
+              "ore": [
+                "hello"
+              ],
+              "bhai": [
+                "hello"
+              ],
+              "bye": [
+                "bye"
+              ],
+              "see": [
+                "bye"
+              ],
+              "thank": [
+                "bye"
+              ],
+              "kind": [
+                "food",
+                "burger"
+              ],
+              "of": [
+                "food",
+                "burger"
+              ],
+              "cuisine": [
+                "food",
+                "not like "
+              ],
+              "provide": [
+                "food"
+              ],
+              "woul": [
+                "food"
+              ],
+              "like": [
+                "food",
+                "not like "
+              ],
+              "to": [
+                "food"
+              ],
+              "have": [
+                "food"
+              ],
+              "i": [
+                "not like "
+              ],
+              "don": [
+                "not like "
+              ],
+              "t": [
+                "not like "
+              ],
+              "your": [
+                "not like "
+              ],
+              "food": [
+                "not like "
+              ],
+              "the": [
+                "not like "
+              ],
+              "cuisne": [
+                "not like "
+              ],
+              "was": [
+                "not like "
+              ],
+              "not": [
+                "not like "
+              ],
+              "so": [
+                "not like "
+              ],
+              "good": [
+                "not like "
+              ],
+              "burger": [
+                "burger"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "hi",
+                "hello",
+                "how",
+                "are",
+                "you",
+                "what",
+                "is",
+                "going",
+                "on",
+                "s",
+                "up",
+                "hey",
+                "man",
+                "acha",
+                "sahi",
+                "hai",
+                "ore",
+                "bhai",
+                "bye",
+                "see",
+                "thank",
+                "kind",
+                "of",
+                "cuisine",
+                "provide",
+                "woul",
+                "like",
+                "to",
+                "have",
+                "i",
+                "don",
+                "t",
+                "your",
+                "food",
+                "the",
+                "cuisne",
+                "was",
+                "not",
+                "so",
+                "good",
+                "burger"
+              ],
+              "intents": [
+                "hello",
+                "bye",
+                "food",
+                "not like ",
+                "burger"
+              ],
+              "perceptrons": [
+                [
+                  7.253593444824219,
+                  7.329972267150879,
+                  5.517987251281738,
+                  5.517987251281738,
+                  -3.707935094833374,
+                  0.6137915849685669,
+                  2.239542245864868,
+                  2.239542245864868,
+                  2.239542245864868,
+                  3.358860969543457,
+                  3.358860969543457,
+                  3.6650242805480957,
+                  3.6650242805480957,
+                  2.4437968730926514,
+                  2.4437968730926514,
+                  2.4437968730926514,
+                  3.6648125648498535,
+                  3.6648125648498535,
+                  -6.860755920410156,
+                  -3.2414326667785645,
+                  -3.234334945678711,
+                  -2.943152904510498,
+                  -2.943152904510498,
+                  -2.9600558280944824,
+                  -1.585866093635559,
+                  -1.0264898538589478,
+                  -2.218862295150757,
+                  -1.0264898538589478,
+                  -1.0264898538589478,
+                  -1.092769742012024,
+                  -1.092769742012024,
+                  -1.092769742012024,
+                  -0.6115906834602356,
+                  -0.9894188046455383,
+                  -0.46211469173431396,
+                  -1.3987069129943848,
+                  -1.3987069129943848,
+                  -1.3987069129943848,
+                  -1.3987069129943848,
+                  -1.3987069129943848,
+                  -1.6753913164138794,
+                  6.948778690372208
+                ],
+                [
+                  -2.7182576656341553,
+                  -2.7762951850891113,
+                  -3.7729806900024414,
+                  -3.7729806900024414,
+                  4.769105911254883,
+                  -2.4126291275024414,
+                  -0.1239219605922699,
+                  -0.1239219605922699,
+                  -0.1239219605922699,
+                  -0.1849244087934494,
+                  -0.1849244087934494,
+                  -1.3884563446044922,
+                  -1.3884563446044922,
+                  -0.9269682168960571,
+                  -0.9269682168960571,
+                  -0.9269682168960571,
+                  -1.387812614440918,
+                  -1.387812614440918,
+                  11.382136344909668,
+                  6.72853946685791,
+                  6.713343620300293,
+                  -0.2127506583929062,
+                  -0.2127506583929062,
+                  -3.867966651916504,
+                  -3.6866002082824707,
+                  -1.2131946086883545,
+                  -1.5070892572402954,
+                  -1.2131946086883545,
+                  -1.2131946086883545,
+                  -0.2938654124736786,
+                  -0.2938654124736786,
+                  -0.2938654124736786,
+                  -0.16628621518611908,
+                  -0.2804051637649536,
+                  -0.1200479194521904,
+                  -0.5578111410140991,
+                  -0.5578111410140991,
+                  -0.5578111410140991,
+                  -0.5578111410140991,
+                  -0.5578111410140991,
+                  -0.04611324146389961,
+                  2.789297113014613
+                ],
+                [
+                  -0.16534502804279327,
+                  -0.2465778887271881,
+                  -1.1740148067474365,
+                  -1.1740148067474365,
+                  2.169309139251709,
+                  1.0437896251678467,
+                  -0.814103364944458,
+                  -0.814103364944458,
+                  -0.814103364944458,
+                  -1.0409083366394043,
+                  -1.0409083366394043,
+                  -0.0815901905298233,
+                  -0.0815901905298233,
+                  -0.05948435887694359,
+                  -0.05948435887694359,
+                  -0.05948435887694359,
+                  -0.07572035491466522,
+                  -0.07572035491466522,
+                  -0.07678365707397461,
+                  -1.6847050189971924,
+                  -1.6535245180130005,
+                  2.3444483280181885,
+                  2.3444483280181885,
+                  8.736832618713379,
+                  3.291616439819336,
+                  3.445844888687134,
+                  1.0611320734024048,
+                  3.445844888687134,
+                  3.445844888687134,
+                  -2.3887264728546143,
+                  -2.3887264728546143,
+                  -2.3887264728546143,
+                  -0.17055197060108185,
+                  -0.25171011686325073,
+                  -2.1374428272247314,
+                  -0.16697774827480316,
+                  -0.16697774827480316,
+                  -0.16697774827480316,
+                  -0.16697774827480316,
+                  -0.16697774827480316,
+                  -5.1626482009887695,
+                  -0.46800256121183414
+                ],
+                [
+                  -0.5280647873878479,
+                  -0.6671451330184937,
+                  -0.12387259304523468,
+                  -0.12387259304523468,
+                  -1.2039905786514282,
+                  -1.1029213666915894,
+                  -0.10791294276714325,
+                  -0.10791294276714325,
+                  -0.10791294276714325,
+                  -0.09799525141716003,
+                  -0.09799525141716003,
+                  -0.3332545757293701,
+                  -0.3332545757293701,
+                  -0.25230011343955994,
+                  -0.25230011343955994,
+                  -0.25230011343955994,
+                  -0.31852224469184875,
+                  -0.31852224469184875,
+                  -0.5225858092308044,
+                  -0.08116552233695984,
+                  -0.07102560997009277,
+                  -0.3437764346599579,
+                  -0.3437764346599579,
+                  1.0989181995391846,
+                  -0.40333792567253113,
+                  -0.3280448019504547,
+                  2.500331401824951,
+                  -0.3280448019504547,
+                  -0.3280448019504547,
+                  2.8844594955444336,
+                  2.8844594955444336,
+                  2.8844594955444336,
+                  1.4079995155334473,
+                  1.1784088611602783,
+                  1.4747936725616455,
+                  2.752253532409668,
+                  2.752253532409668,
+                  2.752253532409668,
+                  2.752253532409668,
+                  2.752253532409668,
+                  -0.13029687106609344,
+                  0.5216799579750532
+                ],
+                [
+                  -0.1589571088552475,
+                  -0.21187983453273773,
+                  -0.049225304275751114,
+                  -0.049225304275751114,
+                  -0.4120256006717682,
+                  1.043580412864685,
+                  -0.45359036326408386,
+                  -0.45359036326408386,
+                  -0.45359036326408386,
+                  -0.6082131266593933,
+                  -0.6082131266593933,
+                  -0.08884350210428238,
+                  -0.08884350210428238,
+                  -0.07063065469264984,
+                  -0.07063065469264984,
+                  -0.07063065469264984,
+                  -0.08366590738296509,
+                  -0.08366590738296509,
+                  -0.11387857794761658,
+                  -0.02432197332382202,
+                  -0.020684795454144478,
+                  2.4411115646362305,
+                  2.4411115646362305,
+                  -5.886843681335449,
+                  -0.06293005496263504,
+                  -0.1769031137228012,
+                  -0.192364901304245,
+                  -0.1769031137228012,
+                  -0.1769031137228012,
+                  -0.008202817291021347,
+                  -0.008202817291021347,
+                  -0.008202817291021347,
+                  -0.004239289090037346,
+                  -0.008202817291021347,
+                  -0.0019204911077395082,
+                  -0.01213714387267828,
+                  -0.01213714387267828,
+                  -0.01213714387267828,
+                  -0.01213714387267828,
+                  -0.01213714387267828,
+                  8.237632751464844,
+                  0.049325639414592934
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is my subscription"
+      ],
+      [
+        "en",
+        "is there any valid subscription"
+      ],
+      [
+        "en",
+        "do you have movie"
+      ],
+      [
+        "en",
+        "how many movies"
+      ],
+      [
+        "en",
+        "is there any regional movies"
+      ],
+      [
+        "en",
+        "movies"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "what is going on"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey man"
+      ],
+      [
+        "en",
+        "acha sahi hai"
+      ],
+      [
+        "en",
+        "ore bhai"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "what kind of cuisine"
+      ],
+      [
+        "en",
+        "cuisine you provide"
+      ],
+      [
+        "en",
+        "what woul you like to have?"
+      ],
+      [
+        "en",
+        "what cuisine you provide?"
+      ],
+      [
+        "en",
+        "i don, t like your food"
+      ],
+      [
+        "en",
+        "i don't like the cuisine"
+      ],
+      [
+        "en",
+        "cuisne was not so good"
+      ],
+      [
+        "en",
+        "i don't like the food"
+      ],
+      [
+        "en",
+        "what kind of burger?"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "hello": [
+          {
+            "answer": "hi , welcome to new day"
+          },
+          {
+            "answer": "thank you for asking , what about you"
+          },
+          {
+            "answer": "dsfdsf"
+          },
+          {
+            "answer": "sahi hai"
+          }
+        ],
+        "bye": [
+          {
+            "answer": "no, problem i am always here to help"
+          }
+        ],
+        "food": [
+          {
+            "answer": "we provide indian and italian cuisine"
+          }
+        ],
+        "not like ": [
+          {
+            "answer": "sorry for yopur inconvinience"
+          }
+        ],
+        "burger": [
+          {
+            "answer": "cheese burger"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
