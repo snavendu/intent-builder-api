@@ -116,10 +116,10 @@ router.post("/train/:id", async (req, res) => {
     const { id } = req.params;
     const intent = await Intents.findById(`${id}`);
     console.log(intent, `${__dirname}/${id}`);
-    if (fs.existsSync(`${path.resolve('./../')}/${id}`)) {
+    if (await fs.existsSync(`${path.resolve('./../')}/${id}`)) {
 
         console.log("already exists, removing")
-        fs.unlink(`${path.resolve('./../')}/${id}`, (err) => {
+        await fs.unlink(`${path.resolve('./../')}/${id}`, (err) => {
             console.log("deletd");
         })
     }
